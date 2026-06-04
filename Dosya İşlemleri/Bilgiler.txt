@@ -1,0 +1,12 @@
+Isim: erhan
+Vize: 35
+Odev: 45
+Final: 79
+Ortalama: 58
+Isim: ahet
+Vize: 23
+Odev: 54
+Final: 58
+Ortalama: 43.6
+
+--------------------------

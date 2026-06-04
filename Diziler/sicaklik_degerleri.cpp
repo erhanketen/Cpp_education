@@ -16,6 +16,7 @@ int main(int agrv,char**agrc)
 	{
 		int sayi = rand() % 101 - 20;
 		sicakliklar[i] = sayi;
+		cout << sicakliklar[i] << endl;
 	}
 	
 	// A) Ortalama Sıcaklık Hesabı:
