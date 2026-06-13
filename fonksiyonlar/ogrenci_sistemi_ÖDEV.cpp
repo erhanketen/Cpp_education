@@ -49,7 +49,7 @@ int main(int agrv, char ** agrc)
 		{
 			float sinifOrt = sinifOrtalamasi(ortalamalar,sinifMevcudu);
 			cout << "==== SINIF ORTALAMASI ====\n\n";
-			cout << "Sinif Ortalamasi: " << sinifOrt;
+			cout << "Sinif Ortalamasi: " << sinifOrt << endl;
 		}
 		else if (secim == 4) // En Baþarýlý Öðrenci
 		{
@@ -118,10 +118,8 @@ void ogrencileriListele(string ad[], int numara[],float vize[],float final[],int
 }
 
 float ortalamaHesapla(float vize,float final)
-{
-	float ortalama = (vize * 0.40) + (final * 0.60);
-	
-	return ortalama;
+{	
+	return (vize * 0.40) + (final * 0.60);
 }
 
 char harfNotuHesapla(float ortalama)
@@ -135,16 +133,14 @@ char harfNotuHesapla(float ortalama)
 
 float sinifOrtalamasi(float ortalamalar[],int sinifMevcudu)
 {
-	float ort = 0 , sinifOrt;
+	float ort = 0;
 	
 	for (int i=0;i<sinifMevcudu;i++)
 	{
 		ort += ortalamalar[i];
 	}
 	
-	sinifOrt = ort / sinifMevcudu;
-	
-	return sinifOrt;
+	return  ort / sinifMevcudu;
 }
 int enBasariliOgrenci(float ortalamalar[],int sinifMevcudu)
 {
@@ -173,7 +169,6 @@ int enBasariliOgrenci(float ortalamalar[],int sinifMevcudu)
 			else if (ort[i] < ort[j])
 			{
 				ort[i] = -1;
-				continue;
 			}
 		}
 	}
